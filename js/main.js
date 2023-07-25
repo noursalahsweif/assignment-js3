@@ -8,7 +8,7 @@ var siteUrlInput = document.getElementById("siteurl");
     // local storage
 
     if(localStorage.getItem("sites") != null){
-        siteCon = JSON.parse( localStorage.getItem("sites") )
+        siteCon = JSON.parse( localStorage.getItem("sites") );
         display();
     }
 
@@ -34,7 +34,7 @@ function addsite(){
     checkurl();
     
     if (siteNameInput.value == "" || siteUrlInput.value == ""){
-        window.alert("please enter a name and url")
+        window.alert("please enter a name and url");
     }
     else{
         siteCon.push(site);
@@ -60,7 +60,7 @@ function checkurl(){
         console.log(1);
     }
     else{
-        window.alert("please enter a valid url")
+        window.alert("please enter a valid url");
         clear();
     }
     
